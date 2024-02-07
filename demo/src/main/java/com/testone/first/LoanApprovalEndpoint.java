@@ -16,7 +16,7 @@ public class LoanApprovalEndpoint {
 		if(years < 5)
 	        rs=new LoanResponse(0, years, 0);
 		else
-			rs=new LoanResponse(years*1000, years, 1);
+			rs=new LoanResponse(years*2000, years, 1);
 		
 		return ResponseEntity.ok(rs);
 	}
